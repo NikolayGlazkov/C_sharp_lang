@@ -1,7 +1,13 @@
-﻿//  Дано число обозначающее день недели. Выяснить является номер дня недели выходным
-Console.Write("введите имя! ");
+﻿//  почемуто не работает этот код
+Console.Write("Введите свое имя: ");
 string username = Console.ReadLine();
-Console.Write("привет, ");
-Console.Write(username);
 
-
+if( username == "Маша")
+{
+    Console.WriteLine("это Маша!");
+}
+else
+{
+    Console.Write("привет. ");
+    Console.WriteLine(username);
+}
