@@ -10,8 +10,6 @@ x = 2; y = 4 -> 1
 x = -34; y =-30 -> 3 
 */
 
-
-
 int find_num(int x,int y)
 {
     int result = 0;
@@ -36,7 +34,6 @@ int find_num(int x,int y)
     return result;
 }
 
-
 Console.Write("ВВедите число X:");
 int userX = Convert.ToInt32(Console.ReadLine());
 Console.Write("ВВедите число Y:");
@@ -52,5 +49,6 @@ else
 {
     Console.WriteLine($"Точка {userX}, {userY} находиться на пересечении плоскостей");
 }
+
 
 

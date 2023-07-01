@@ -19,7 +19,6 @@ void PrintCountGeneric<T>(T collection) where T : ICollection
     Console.WriteLine(collection.Count);
 }
 
-...
 
 var list = new List<int>() { 1, 2 };
 PrintCountGeneric(list);
