@@ -5,7 +5,7 @@
 Console.WriteLine("Введите число от одного до 7: ");
 int num = int.Parse(Console.ReadLine());
 
-if (num == 6 | num == 6)
+if (num == 6 | num == 7)
 {
     Console.WriteLine("выходной");
 }

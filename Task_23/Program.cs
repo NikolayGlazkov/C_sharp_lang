@@ -1,7 +1,7 @@
 ﻿/*
 Напишите программу котрая принимает на вфод число N и выводиит кубы от 1 до N
 */ 
-static void GenerateSquareTable(int N)
+static void СubeSearch(int N)
 {
 for (int i = 1; i <= N; i++)
 {
@@ -10,4 +10,4 @@ for (int i = 1; i <= N; i++)
 }
 Console.Write("Введите число N: ");
 int num = Convert.ToInt32(Console.ReadLine());
-GenerateSquareTable(num);
+СubeSearch(num);

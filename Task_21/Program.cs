@@ -6,7 +6,7 @@ using System;
 
 class Program
 {
-    static double DistanceBetweenPoints(int x1, int y1, int z1, int x2, int y2, int z2)
+    static double DistanceBetweenPoints3D(int x1, int y1, int z1, int x2, int y2, int z2)
     {
         double distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1,2));
         return distance;
@@ -24,7 +24,7 @@ class Program
         int ycord2 = Convert.ToInt32(Console.ReadLine());
         int zcord2 = Convert.ToInt32(Console.ReadLine());
 
-        double answer = DistanceBetweenPoints(xcord1, ycord1, zcord1, xcord2, ycord2, zcord2);
+        double answer = DistanceBetweenPoints3D(xcord1, ycord1, zcord1, xcord2, ycord2, zcord2);
         Console.WriteLine($"Расстояние между точками: {answer}");
     }
 }
