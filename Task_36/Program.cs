@@ -5,7 +5,7 @@ Random rand = new Random();
 int summa = 0;
 for (int i = 0; i < arr.Length; i++)
 {
-   arr[i] = rand.Next(1,999); // Заполняем случайными числами диапазоном от -100 до 100
+   arr[i] = rand.Next(1,999); // Заполняем случайными числами диапазоном от 1 до 999
    if (i % 2 != 0)
    {
     summa += arr[i];
