@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+int[] arr = new int[10];
+Random rand = new Random();
+
+int summa = 0;
+for (int i = 0; i < arr.Length; i++)
+{
+   arr[i] = rand.Next(1,999); // Заполняем случайными числами диапазоном от -100 до 100
+   if (i % 2 != 0)
+   {
+    summa += arr[i];
+   }
+}
+
+
+Console.WriteLine("Массив: " + string.Join(", ", arr));
+Console.WriteLine($"сумма элементов стоящих на четных позициях ровна {summa}");
