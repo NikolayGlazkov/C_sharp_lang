@@ -8,3 +8,5 @@
 Console.WriteLine("Введите число :");
 
 int digit = Convert.ToInt32(Console.ReadLine());
+
+string
