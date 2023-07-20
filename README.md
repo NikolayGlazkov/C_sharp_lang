@@ -10,10 +10,10 @@
 Я смотрю запись урока №7 и первую задачу под номером 46 пишу вместе с вами, сам тем времением сложил в голове код на питоне и хочу его придставить ниже: В первые строки написания цикла я ствлю ; вместо : у меня какоето порожение мозга. 
 
 \```
-import random*
+import random
 
-def crieter2Darray(row,colows,dig): #row - ширина, colows - высота, dig - число
-    array = [[random.randint(-dig,dig +1)] * row for i in range(colows)]
+def crieter2Darray(row,colows): #row - ширина, colows - высота, dig - число
+    array = [[random.randrange(1, 100) for _ in range(colows)] for _ in range(row)]
     return array
 
 def print_array(array):
@@ -24,8 +24,8 @@ def print_array(array):
 
 row = int(input("Введите ширину :"))
 colows = int(input("Введите длинну :"))
-dig = int(input("Введите число для интервала :"))
-print_array(crieter2Darray(row,colows,dig))
+
+print_array(crieter2Darray(row,colows))
 \```
 
 
