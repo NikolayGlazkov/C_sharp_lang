@@ -14,3 +14,4 @@ row = int(input("Введите ширину :"))
 colows = int(input("Введите длинну :"))
 
 print_array(crieter2Darray(row,colows))
+
