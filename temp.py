@@ -1,17 +1,8 @@
-import random
+def ol_digit(n):
+    if n == 1:
+        print(n)
+    else:
+        print(n)
+        ol_digit(n-1)
 
-def crieter2Darray(row,colows): #row - ширина, colows - высота, dig - число
-    array = [[random.randrange(1, 100) for _ in range(colows)] for _ in range(row)]
-    return array
-
-def print_array(array):
-    for i in range(0, len(array)):
-        for j in range(0, len(array[i])):
-            print(array[i][j], end=' ')
-        print()
-
-row = int(input("Введите ширину :"))
-colows = int(input("Введите длинну :"))
-
-print_array(crieter2Darray(row,colows))
-
+ol_digit(int(input("Введите N:")))
